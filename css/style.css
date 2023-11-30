@@ -1,4 +1,120 @@
-.claim {
-    background-image: url(../images/);
-    height: 20vh;
+
+:root {
+    --darkgreen: #099D8D;
+    --lightgreen: #14D9C4;
+    --white: #FFFFFF
+    --black: #000000;
+    --darkgray: #54585A;
+    --lightgray: #B8B8B9;
+    --graybackground: #F1F1F1;
 }
+header {
+    background-color: #099D8D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    flex-wrap: wrap;
+}
+.h1 {
+    color: white;
+    font-weight: bold;
+    font-family: rubik;
+    text-transform: uppercase;
+    padding: 20px;
+    align-self: center;
+}
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-family: rubik;
+    text-transform: uppercase;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-items a {
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+}
+.claim {
+    background-image: url(../img/claimpic.png);
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: burlywood; */
+    /* padding-top: ; */
+    /* padding-bottom: ; */
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.column-1 {
+   width: 50%;
+}
+.column-strengths {
+}
+.column-text-1 {
+}
+.column-2 {
+    width: 50%;
+}
+.column-goals {
+}
+/* reemplazar colores por variables */
+
+.footer {
+    font-family: Open Sans; /* Habría que meter segunda opción? */
+    border: solid 1px #b8b8b9;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;/* Gap size puesto a boleo */
+     /*Confirmar padding size */
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.footer-box{
+    margin: auto;
+    gap: 10px;/* Gap size puesto a boleo */
+}
+
+.copyright {
+    color: #b8b8b9;
+    /* Falta definir font size */
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;/* Gap size puesto a boleo */
+}
+
+.footer-list a {
+    color: #54585a;
+    text-decoration: none;   
+}
+
+.footer-logo img{
+    /* Confirmar size */
+    width: 115.9px;
+    height: 45px;
+}
+
