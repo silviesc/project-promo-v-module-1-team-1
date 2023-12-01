@@ -72,12 +72,10 @@ header {
 }
 .column-goals {
 }
-/* reemplazar colores por variables */
-
 .footer {
     font-family: Open Sans; /* Habría que meter segunda opción? */
-    border: solid 1px #b8b8b9;
-    background-color: white;
+    border: solid 1px var(--lightgray);
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,6 +83,7 @@ header {
      /*Confirmar padding size */
     padding-top: 30px;
     padding-bottom: 45px;
+    height: 170px;
 }
 
 .footer-box{
@@ -93,22 +92,21 @@ header {
 }
 
 .copyright {
-    color: #b8b8b9;
-    /* Falta definir font size */
+    color: var(--lightgray)
+    /* Falta definir font size, weight, etc */
 }
 
 .footer-menu {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    
     align-items: center;
     justify-content: space-around;
-    gap: 5px;/* Gap size puesto a boleo */
+    gap: 10px;/* Gap size puesto a boleo */
 }
 
 .footer-list a {
-    color: #54585a;
+    color: var(--darkgray);
     text-decoration: none;   
 }
 
@@ -118,3 +116,41 @@ header {
     height: 45px;
 }
 
+@media screen and (min-width: 768px) {
+    .footer {
+        display: block;
+        margin-left: 45px;
+        margin-right: 45px;
+        /*flex-direction: row;
+        /*flex-wrap: wrap;*/
+        /*gap: 200px;*/
+        /*align-items:;*/
+    }
+    .copyright{
+        width: fit-content;
+        position: sticky;
+        right: 100%;
+        margin-top: 30px;
+    }
+    .footer-menu{
+        position: sticky;
+        left: 100%;
+        bottom: 100%;
+        width: fit-content;
+        margin-top: 25px;
+        /*margin: 0 0 0 182px;*/
+    }
+    .footer-logo{
+        align-self: left;
+        width: fit-content;
+        position: sticky;
+        right: 100%;
+        margin-top: 15px;
+        margin-bottom: 60px;
+        /*bottom: 65%;*/
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
