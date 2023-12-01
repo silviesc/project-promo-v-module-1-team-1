@@ -7,16 +7,18 @@
     --lightgray: #B8B8B9;
     --graybackground: #F1F1F1;
 }
+/*repasar que estén todas las propiedades*/
+.background-header {
+    background-image: url(../img/groundpurple_720.jpg);
+    width: 100vw;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .header {
-    background-color: var(--darkgreen);
+    background-color: #099d8eba;
     display: flex;
     flex-direction: column;
-    /* si queremos que el menú baje con el scroll
-    position: fixed;
-    top: 0;
-    width: 100vw; 
-    tendriamos que añadirle a la section 1 un margin-top para
-    que no lo oculte*/
 }
 .header-h1 {
     align-self: center;
@@ -29,7 +31,7 @@
     padding: 10px;
 }
 .menu {
-    background-color: var(--lightgreen);
+    background-color: #14d9c57a;
 }
 .menu-items {
     display: flex;
@@ -57,7 +59,7 @@
         margin-left: 30px;
     }
     .menu {
-        background-color: var(--darkgreen);
+        background-color: transparent;
         margin-right: 30px;
     }
     .menu-items {
@@ -74,12 +76,6 @@
         margin-right: 130px;
 }
 
-.claim {
-    background-image: url(../img/claimpic.png);
-    height: 20vh;
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
 .team {
     display: flex;
     flex-direction: column;
