@@ -1,51 +1,84 @@
-
 :root {
     --darkgreen: #099D8D;
     --lightgreen: #14D9C4;
-    --white: #FFFFFF
+    --white: #FFFFFF;
     --black: #000000;
     --darkgray: #54585A;
     --lightgray: #B8B8B9;
     --graybackground: #F1F1F1;
 }
-header {
-    background-color: #099D8D;
+.header {
+    background-color: var(--darkgreen);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* si queremos que el menú baje con el scroll
+    position: fixed;
+    top: 0;
+    width: 100vw; 
+    tendriamos que añadirle a la section 1 un margin-top para
+    que no lo oculte*/
 }
-.h1 {
-    color: white;
-    font-weight: bold;
+.header-h1 {
+    align-self: center;
+}
+.h1 { 
+    color: var(--white);
+    font-size: 15px;
     font-family: rubik;
     text-transform: uppercase;
-    padding: 20px;
-    align-self: center;
+    padding: 10px;
+}
+.menu {
+    background-color: var(--lightgreen);
 }
 .menu-items {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
     list-style: none;
-    color: white;
-    font-weight: bold;
-    font-family: rubik;
-    text-transform: uppercase;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 10px;
 }
 .menu-items a {
+    color: var(--white);
+    font-size: 15px;
+    font-family: rubik;
+    font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
-    padding: 30px;
-    color: white;
 }
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .h1 {
+        margin-left: 30px;
+    }
+    .menu {
+        background-color: var(--darkgreen);
+        margin-right: 30px;
+    }
+    .menu-items {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+}
+@media (min-width: 1200px){
+    .h1 {
+        margin-left: 130px;
+    }
+    .menu {
+        margin-right: 130px;
+}
+
 .claim {
     background-image: url(../img/claimpic.png);
     height: 20vh;
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; 
 }
 .team {
     display: flex;
@@ -86,17 +119,14 @@ header {
     padding-top: 30px;
     padding-bottom: 45px;
 }
-
 .footer-box{
     margin: auto;
     gap: 10px;/* Gap size puesto a boleo */
 }
-
 .copyright {
     color: #b8b8b9;
     /* Falta definir font size */
 }
-
 .footer-menu {
     display: flex;
     flex-direction: column;
@@ -106,7 +136,6 @@ header {
     justify-content: space-around;
     gap: 5px;/* Gap size puesto a boleo */
 }
-
 .footer-list a {
     color: #54585a;
     text-decoration: none;   
@@ -117,4 +146,3 @@ header {
     width: 115.9px;
     height: 45px;
 }
-
