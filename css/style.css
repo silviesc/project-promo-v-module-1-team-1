@@ -1,4 +1,3 @@
-
 :root {
     --darkgreen: #099D8D;
     --lightgreen: #14D9C4;
@@ -70,8 +69,54 @@ header {
 .column-2 {
     width: 50%;
 }
-.column-goals {
+
+
+
+/* Cambios 30/11/2023 Nai*/
+/*Como añado fuente*/
+
+.h2-section{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+    color: var(--darkgreen);
+    font-family: Rubik;
 }
+.article{
+   padding: 15px;
+}
+.img{
+    width: 200px;
+    margin: auto;
+    >img{
+        width: 100%;
+        border: 4px solid var(--lightgray);
+    }
+}
+.cards{
+    >p{
+        text-align: center;
+        padding: 5px;
+    }
+    .social-container{
+         margin: 130px;
+         /*Preguntar la forma correcta de alinear sin necesidad de margin*/
+    >a{
+        gap: 6px;
+        color: var(--darkgreen);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    >a::after{
+        content:"·";
+        color: black ;
+    }
+    }
+}
+
+
+
+
 /* reemplazar colores por variables */
 
 .footer {
@@ -117,4 +162,3 @@ header {
     width: 115.9px;
     height: 45px;
 }
-
