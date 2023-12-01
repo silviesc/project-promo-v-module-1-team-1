@@ -72,8 +72,8 @@ header {
 
 
 
-/* Cambios 30/11/2023 Nai*/
-/*Como añado fuente*/
+/* Cambios 01/11/2023 Nai*/
+/*Me falta moderar el margen del social-container, cambiar la medida de las fotos a partir de  */
 
 .h2-section{
     text-transform: uppercase;
@@ -107,10 +107,37 @@ header {
         text-decoration: none;
         cursor: pointer;
     }
-    >a::after{
+    >.a-point::after{
         content:"·";
         color: black ;
     }
+    }
+}
+@media (min-width:768px){
+    .article{
+        display: flex;
+    }
+    .img{
+        width: 40vw;
+        margin: auto;
+    >img{
+        width: 100%;
+        border: 4px solid var(--lightgray);
+    }
+    }
+    .cards{
+       width: 50vw; 
+       >p{
+        text-align: start;
+       }
+       .social-container{
+        margin: 5px;
+       }
+    }
+}
+@media (min-width:1200px) {
+    .img{
+        width: 30vw;
     }
 }
 
