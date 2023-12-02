@@ -1,4 +1,3 @@
-
 :root {
     --darkgreen: #099D8D;
     --lightgreen: #14D9C4;
@@ -50,9 +49,6 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* background-color: burlywood; */
-    /* padding-top: ; */
-    /* padding-bottom: ; */
 }
 .column {
     display: flex;
@@ -62,14 +58,8 @@ header {
 .column-1 {
    width: 50%;
 }
-.column-strengths {
-}
-.column-text-1 {
-}
 .column-2 {
     width: 50%;
-}
-.column-goals {
 }
 .footer {
     font-family: Open Sans; 
