@@ -45,7 +45,6 @@ header {
     height: 20vh;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 .team {
     display: flex;
@@ -82,7 +81,6 @@ header {
     text-align: center;
     border: solid 1px var(--lightgray);
     background-color: var(--white);
-    justify-content: center;
     height: 250px;
 }
 .copyright {
@@ -95,8 +93,6 @@ header {
     margin-bottom: 30px;
     height: 60px;
     opacity: 0.75;
-    display: flex;
-    flex-direction: column;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -120,22 +116,19 @@ header {
         display: flex;
     }
     .copyright{
-        position: sticky;
+        position: sticky; 
         right: 100%;
         margin-top: 30px;
-        z-index: 0;
     }
     .footer-menu{
         position: sticky;
         left: 100%;
-        margin-top: 25px;
-        z-index: 1;
+        margin-top: 24px;
     }
     .footer-logo{
         position: sticky;
         right: 100%;
-        margin-top: 60px;
-        z-index: 3;
+        margin-top: 65px;
     }
 }
 @media screen and (min-width: 1200px) {
