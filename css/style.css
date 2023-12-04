@@ -6,7 +6,6 @@
     --darkgray: #54585A;
     --lightgray: #B8B8B9;
     --graybackground: #F1F1F1;
-
 }
 
 .background-header {
@@ -15,7 +14,6 @@
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 .header {
@@ -71,7 +69,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .claim-h2 {
@@ -131,8 +128,6 @@
         height: 90px;
         margin-left: 138px;
     }
-
-
 }
 .team {
     display: flex;
