@@ -1,120 +1,135 @@
-
 :root {
     --darkgreen: #099D8D;
     --lightgreen: #14D9C4;
-    --white: #FFFFFF
+    --white: #FFFFFF;
     --black: #000000;
     --darkgray: #54585A;
     --lightgray: #B8B8B9;
     --graybackground: #F1F1F1;
 }
-header {
-    background-color: #099D8D;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    flex-wrap: wrap;
+
+.background-header {
+    background-image: url(../img/groundpurple_720.jpg);
+    width: 100vw;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-.h1 {
-    color: white;
-    font-weight: bold;
-    font-family: rubik;
-    text-transform: uppercase;
-    padding: 20px;
+
+.header {
+    background-color: #099d8eba;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-h1 {
     align-self: center;
 }
+
+.h1 {
+    color: var(--white);
+    font-size: 15px;
+    font-family: rubik;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.menu {
+    background-color: #14d9c57a;
+}
+
 .menu-items {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
     list-style: none;
-    color: white;
-    font-weight: bold;
-    font-family: rubik;
-    text-transform: uppercase;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 10px;
 }
+
 .menu-items a {
-    text-decoration: none;
-    padding: 30px;
-    color: white;
-}
-.claim {
-    background-image: url(../img/claimpic.png);
-    height: 20vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-.team {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    /* background-color: burlywood; */
-    /* padding-top: ; */
-    /* padding-bottom: ; */
-}
-.column {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.column-1 {
-   width: 50%;
-}
-.column-strengths {
-}
-.column-text-1 {
-}
-.column-2 {
-    width: 50%;
-}
-.column-goals {
-}
-/* reemplazar colores por variables */
-
-.footer {
-    font-family: Open Sans; /* Habría que meter segunda opción? */
-    border: solid 1px #b8b8b9;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;/* Gap size puesto a boleo */
-     /*Confirmar padding size */
-    padding-top: 30px;
-    padding-bottom: 45px;
-}
-
-.footer-box{
-    margin: auto;
-    gap: 10px;/* Gap size puesto a boleo */
-}
-
-.copyright {
-    color: #b8b8b9;
-    /* Falta definir font size */
-}
-
-.footer-menu {
-    display: flex;
-    flex-direction: column;
+    color: var(--white);
+    font-size: 15px;
+    font-family: rubik;
+    font-weight: bold;
     text-transform: uppercase;
-    
+    text-decoration: none;
+}
+
+.div-claim {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.claim {
+    background-color: var(--white);
+    width: 290px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    gap: 5px;/* Gap size puesto a boleo */
+
 }
 
-.footer-list a {
-    color: #54585a;
-    text-decoration: none;   
+.claim-h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
 }
 
-.footer-logo img{
-    /* Confirmar size */
-    width: 115.9px;
-    height: 45px;
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .h1 {
+        margin-left: 30px;
+    }
+
+    .menu {
+        background-color: transparent;
+        margin-right: 30px;
+    }
+
+    .menu-items {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .div-claim {
+        justify-content: flex-start;
+        margin-left: 46px;
+        margin-top: -80px;
+    }
+
+    .claim {
+        background-color: var(--white);
+        opacity: 80%;
+        width: 441px;
+        height: 80px;
+    }
+
 }
 
+@media (min-width: 1200px) {
+    .h1 {
+        margin-left: 130px;
+    }
+
+    .menu {
+        margin-right: 130px;
+    }
+    .claim {
+        width: 574px;
+        height: 90px;
+        margin-left: 138px;
+    }
+
+
+}
