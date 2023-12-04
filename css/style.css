@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --darkgreen: #099D8D;
     --lightgreen: #14D9C4;
@@ -58,8 +52,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    /* width: 320px;
-    height: 1083 ; */
+    height: 1083px;
 }
 
 .box-1 {
@@ -192,6 +185,40 @@
     align-items: center;
     color: var(--darkgray)
 }
+@media screen and (min-width: 768px) {
+    .team {
+        height: 303px;
+        padding: 45px 45px 30px;
+        margin: 0 0 7px;
+    }
+
+    .box-2 {
+        height: 333px;
+        margin: 16 px 0 0;
+        padding: 45px 44.8px 60px 45px;
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        width: 1200px;
+        height: 357px;
+        margin: 0 0 399px;
+        padding: 45px 300px 60px 299px;
+    
+    }
+    .box-2 {
+        width: 1200px;
+        height: 309px;
+        margin: 16px 0 0;
+        padding: 45px 138px 60px;
+        
+    }
+}
+
 
 .footer {
     font-family: Open Sans; /* Habría que meter segunda opción? */
