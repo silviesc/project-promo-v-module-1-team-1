@@ -134,3 +134,273 @@
 
 
 }
+.team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 1083px;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 504px;
+    padding: 30px 15px;
+    text-align: center;
+}
+   
+   
+.team-title { 
+    width: 89px;
+    height: 45px;
+    margin: 0 99.5px 15px 101.5px;
+    margin-left: 116.5px;
+    margin-right: 114.15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--lightgreen);
+    text-transform: uppercase;
+       
+    }
+
+.team-description {
+    width: 290px;
+    height: 384px;
+    margin:90 15 30 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: normal;        
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--darkgray);              
+        
+    }
+
+
+.box-2 {
+    background-color: var(--graybackground); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+    height: 579px;
+    padding: 30px 15px 45px 15px;
+    
+       
+}
+
+
+.column-strengths {
+    width: 290px;
+    height: 45px;
+    padding: 30 15 504 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: size 22px;
+    /* el tamaño del título aparece más pequeño */
+    font-weight: 500px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.05;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--darkgreen)  
+
+}
+
+
+.column-text-1 {
+    width: 290px;
+    height: 192px;
+    margin: 0 15 0 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight:normal ;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    align-items: center;
+    color: var(--darkgray);
+    /* gap: 30px; */
+
+}
+
+.column-goals {
+    width: 290px;
+    height: 45px;
+    margin: 30px 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.05;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--darkgreen)
+    
+}
+
+.column-text-2 {
+    width: 290px;
+    height: 192px;
+    /* margin: 0 15 45 15px;  */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    align-items: center;
+    color: var(--darkgray)
+}
+
+
+@media screen and (min-width: 768px) {
+  
+    .box-1 {
+       /* background-color: rgb(17, 118, 84); */
+        width:  768px;
+        height: 333px;
+        padding: 45px 44.8px 60px 45px;
+        margin: 16px 0 0;
+        gap: 30px;
+    }   
+
+    .team-title {
+        width: 88.7px;
+        height: 45px;
+    }
+    .team-description {
+        width:  678px;
+        height: 168px;
+        margin: 15px 0 0;
+        opacity: 0.67;
+    }
+   
+    .box-2 {
+        /* background-color: yellow; */
+        width: 768px;
+        height: 333px;
+        margin: 16px 0 0;
+        padding: 45px 44.8px 60px 45px;
+        display: flex; 
+        flex-direction: row;   
+        justify-content: center;
+
+    }
+
+    .column-strengths {
+        width: 306, px;
+        height: 45px;
+        margin: 0 12px 15px 0;
+
+    }
+
+    .column-text-1 {
+        width: 324px;
+        height: 168px;
+        padding: 15px 18.6px 0 0;
+    }
+
+    .column-goals {
+        width: 335.6px;
+        height: 45px;
+        margin: 0 0 15px 12px;
+
+    }
+
+    .column-text-2 {
+        width: 324px;
+        height: 144px;
+        margin: 15px 2.2px 24px 23.4px;
+
+    }
+}
+ 
+   
+@media screen and (min-width: 1200px) {
+    .team {
+        width: 1200px;
+        height: 357px;
+        margin: 0 0 399px;
+        padding: 45px 300px 60px 299px;
+    
+    }
+    
+    .team-title {
+        width: 88.7px;
+        height: 45px;
+        margin: 0 255.3px 15px 257px;;
+    }
+
+    .team-description {
+        width: 681px;
+        height: 192px;
+        margin: 15px 0 0;
+        /* opacity: 0.67; */
+    }
+
+    .box-2 {
+        width: 1200px;
+        height: 309px;
+        margin: 16px 0 0;
+        padding: 45px 138px 60px;
+        text-align: center;
+        /* opacity: 0.2; */
+        gap: 45px;
+    }
+
+    .column-strengths {
+        width: 439px;
+        height: 45px;
+        margin: 0 38.2px 15px 0;
+        /* font-size: larger; */
+
+    }
+
+    .column-text-1 {
+        width: 439px;
+        height: 144px;
+        margin:  15px 38.2px 0 0;
+        /* padding-left: 138px; */
+        
+    }
+
+    .column-goals {
+        width: 446.8px;
+        height: 45px;
+        margin: 0 0 15px 38.2px;
+    
+    }
+
+    .column.column-text-2 {
+        width: 439px;
+        height: 144px;
+        margin: 15px 1px 0 45px;
+        /* padding-right: 139px; */
+        text-align: center;
+   }
+
+
+}
+
+
