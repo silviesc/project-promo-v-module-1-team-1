@@ -1,5 +1,81 @@
-.page__header {
+.background-header {
+  background-image: url(/images/groundpurple_720.jpg);
+  width: 100vw;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header {
+  background-color: #099d8eba;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+}
+
+.h1 {
+  color: var(--white);
+  font-size: 15px;
+  font-family: rubik;
+  text-transform: uppercase;
+  padding: 10px;
+  align-self: center;
+}
+
+.menu {
+  background-color: #14d9c57a;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 10px;
+}
+
+.menu-items a {
+  color: var(--white);
+  font-size: 15px;
+  font-family: rubik;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .h1 {
+    margin-left: 30px;
+  }
+
+  .menu {
+    background-color: transparent;
+    margin-right: 30px;
+  }
+
+  .menu-items {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  .h1 {
+    margin-left: 130px;
+  }
+
+  .menu {
+    margin-right: 130px;
+  }
+
 }

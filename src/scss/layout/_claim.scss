@@ -1,0 +1,48 @@
+.div-claim {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.claim {
+    background-color: var(--white);
+    width: 290px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.claim-h2 {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+
+
+    .div-claim {
+        justify-content: flex-start;
+        margin-left: 46px;
+        margin-top: -80px;
+    }
+
+    .claim {
+        background-color: var(--white);
+        opacity: 80%;
+        width: 441px;
+        height: 80px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .claim {
+        width: 574px;
+        height: 90px;
+        margin-left: 138px;
+    }
+}
