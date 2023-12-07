@@ -1,20 +1,16 @@
-
 .footer {
-  font-family: Open Sans; 
+  font-family: $font-text;
   font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.43;
-  letter-spacing: normal;
   text-align: center;
-  border: solid 1px $lightgray;
+  border-top: solid 1px $light-gray;
   background-color: $white;
   height: 250px;
 }
 .copyright {
   height: 20px;
-  color: $lightgray;
-  margin-top: 30px
+  color: $light-gray;
+  margin-top: 30px;
 }
 .footer-menu {
   margin-top: 20px;
@@ -28,42 +24,41 @@
   list-style: none;
 }
 .footer-list a {
-  color: $darkgray;
-  text-decoration: none; 
+  color: $dark-gray;
+  text-decoration: none;
 }
-.footer-logo img{
+.footer-logo img {
   width: 115.9px;
   height: 45px;
   margin-bottom: 45px;
 }
 @media screen and (min-width: 768px) {
   .footer {
-      padding-left: 45px;
-      padding-right: 45px;
-      height: 170px;
-      display: flex;
+    padding-left: 45px;
+    padding-right: 45px;
+    height: 170px;
+    display: flex;
   }
-  .copyright{
-      position: sticky; 
-      right: 100%;
-      margin-top: 30px;
+  .copyright {
+    position: sticky;
+    right: 100%;
+    margin-top: 30px;
   }
-  .footer-menu{
-      position: sticky;
-      left: 100%;
-      margin-top: 24px;
+  .footer-menu {
+    position: sticky;
+    left: 100%;
+    margin-top: 24px;
   }
-  .footer-logo{
-      position: sticky;
-      right: 100%;
-      margin-top: 65px;
+  .footer-logo {
+    position: sticky;
+    right: 100%;
+    margin-top: 65px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer{
-      padding-left: 138px;
-      padding-right: 138px;
-      height: 161px;
+  .footer {
+    padding-left: 138px;
+    padding-right: 138px;
+    height: 161px;
   }
 }
-
