@@ -17,8 +17,6 @@
   margin-bottom: 30px;
   height: 60px;
   opacity: 0.75;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 .footer-list li {
   list-style: none;
@@ -26,6 +24,8 @@
 .footer-list a {
   color: $dark-gray;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 .footer-logo img {
   width: 115.9px;
