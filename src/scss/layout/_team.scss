@@ -1,19 +1,11 @@
 .team {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   height: fit-content;
   font-family: Open Sans;
 }
-// .box-1 {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   width: 100vw;
-//   height: fit-content;
-//   text-align: center;
-// }
-
 .team-title {
   line-height: 1.88;
   color: $light-green;
@@ -21,20 +13,25 @@
   font-family: Rubik;
   font-size: 24px;
 }
-
 .team-description {
   line-height: 1.5;
   text-align: center;
   color: $dark-gray;
   padding: 15px 15px 30px 15px;
 }
+.square {
+  background-color: $white;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  transform: rotate(45deg);
+  margin-bottom: -15px;
+  z-index: 5;
+}
 
 .box-2 {
   background-color: $gray-background;
   padding: 30px 15px 45px 15px;
-
-}
-.column {
 
 }
 
@@ -44,7 +41,8 @@
   line-height: 2.05;
   color: $dark-green;
 }
-.objective {
+
+.goals {
   margin-top: 30px;
 }
 
@@ -57,130 +55,103 @@
 
 
 @media screen and (min-width: 768px) {
-
   .box-1 {
-
     padding: 45px 44.8px 60px 45px;
-    margin: 16px 0 0;
-    gap: 30px;
   }
 
   .team-title {
-    width: 88.7px;
-    height: 45px;
-  }
-
-  .team-description {
-    width: 678px;
-    height: 168px;
-    margin: 15px 0 0;
-    opacity: 0.67;
+    color: $dark-green;
   }
 
   .box-2 {
-
-    width: 768px;
-    height: 333px;
-    margin: 16px 0 0;
-    padding: 45px 44.8px 60px 45px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
+    padding: 45px;
+    gap: 30px;
   }
 
-  .column-strengths {
-    width: 306, px;
-    height: 45px;
-    margin: 0 12px 15px 0;
-
+  .column {
+    width: 50%;
   }
 
-  .column-text-1 {
-    width: 324px;
-    height: 168px;
-    padding: 15px 18.6px 0 0;
-  }
-
-  .column-goals {
-    width: 335.6px;
-    height: 45px;
-    margin: 0 0 15px 12px;
-
-  }
-
-  .column-text-2 {
-    width: 324px;
-    height: 144px;
-    margin: 15px 2.2px 24px 23.4px;
-
+  .goals {
+    margin-top: 0;
   }
 }
 
 
 @media screen and (min-width: 1200px) {
-  .team {
-    width: 1200px;
-    height: 357px;
-    margin: 0 0 399px;
-    padding: 45px 300px 60px 299px;
-
+  .box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .team-title {
-    width: 88.7px;
-    height: 45px;
-    margin: 0 255.3px 15px 257px;
+    font-size: 30px;
     ;
   }
 
   .team-description {
     width: 681px;
-    height: 192px;
-    margin: 15px 0 0;
-    opacity: 0.67;
+    font-size: 20px;
   }
-
   .box-2 {
-    width: 1200px;
-    height: 309px;
-    margin: 16px 0 0;
-    padding: 45px 138px 60px;
-    text-align: center;
-    opacity: 0.2;
-    gap: 45px;
+    gap: 90px;
+    justify-content: center;
   }
-
-  .column-strengths {
+  .column {
     width: 439px;
-    height: 45px;
-    margin: 0 38.2px 15px 0;
-    font-size: larger;
+  }
+  .column-title {
+    font-size: 28px;
+
+  }
+  .column-text {
+    font-size: 20px;
 
   }
 
-  .column-text-1 {
-    width: 439px;
-    height: 144px;
-    margin: 15px 38.2px 0 0;
-    padding-left: 138px;
+  // .box-2 {
+  //   width: 1200px;
+  //   height: 309px;
+  //   margin: 16px 0 0;
+  //   padding: 45px 138px 60px;
+  //   text-align: center;
+  //   opacity: 0.2;
+  //   gap: 45px;
+  // }
 
-  }
+  // .column-strengths {
+  //   width: 439px;
+  //   height: 45px;
+  //   margin: 0 38.2px 15px 0;
+  //   font-size: larger;
 
-  .column-goals {
-    width: 446.8px;
-    height: 45px;
-    margin: 0 0 15px 38.2px;
+  // }
 
-  }
+  // .column-text-1 {
+  //   width: 439px;
+  //   height: 144px;
+  //   margin: 15px 38.2px 0 0;
+  //   padding-left: 138px;
 
-  .column.column-text-2 {
-    width: 439px;
-    height: 144px;
-    margin: 15px 1px 0 45px;
-    padding-right: 139px;
-    text-align: center;
-  }
+  // }
+
+  // .column-goals {
+  //   width: 446.8px;
+  //   height: 45px;
+  //   margin: 0 0 15px 38.2px;
+
+  // }
+
+  // .column.column-text-2 {
+  //   width: 439px;
+  //   height: 144px;
+  //   margin: 15px 1px 0 45px;
+  //   padding-right: 139px;
+  //   text-align: center;
+  // }
 
 
 }
