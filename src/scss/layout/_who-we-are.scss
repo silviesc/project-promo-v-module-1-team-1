@@ -1,22 +1,20 @@
 
-.h2-section{
+.h2_section{
     text-transform: uppercase;
     text-align: center;
     padding: 15px;
-    color: var(--darkgreen);
+    color:$dark-green;
     font-family: Rubik;
 }
 .article{
-   padding: 15px;
-   display: flex;
-
+   padding: 5px;
 }
 .img{
     width: 200px;
     margin: auto;
     >img{
         width: 100%;
-        border: 4px solid var(--lightgray);
+        border: 4px solid $light-gray;
     }
 }
 .cards{
@@ -26,6 +24,7 @@
     }
     .social-container{
          margin: 130px;
+         color:$dark-green;
          /*Preguntar la forma correcta de alinear sin necesidad de margin*/
     >a{
         gap: 6px;
