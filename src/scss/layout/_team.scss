@@ -1,10 +1,11 @@
 .team {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   height: fit-content;
   font-family: Open Sans;
+  
 }
 .team-title {
   line-height: 1.88;
@@ -24,6 +25,7 @@
   width: 30px;
   height: 30px;
   align-self: center;
+  left: 500px;
   transform: rotate(45deg);
   margin-bottom: -15px;
   z-index: 5;
@@ -32,6 +34,7 @@
 .box-2 {
   background-color: $gray-background;
   padding: 30px 15px 45px 15px;
+  width: fit-content;
 
 }
 
@@ -68,6 +71,7 @@
     flex-direction: row;
     padding: 45px;
     gap: 30px;
+   
   }
 
   .column {
@@ -99,6 +103,7 @@
   .box-2 {
     gap: 90px;
     justify-content: center;
+    width: 100vw;
   }
   .column {
     width: 439px;
