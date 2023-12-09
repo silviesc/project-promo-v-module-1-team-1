@@ -16,7 +16,6 @@
   margin-top: 20px;
   margin-bottom: 30px;
   height: 60px;
-  opacity: 0.75;
 }
 .footer-list li {
   list-style: none;
@@ -26,6 +25,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+  opacity: 0.75;
 }
 .footer-logo img {
   width: 115.9px;
@@ -42,12 +42,12 @@
   .copyright {
     position: sticky;
     right: 100%;
-    margin-top: 30px;
+    top: 30px;
   }
   .footer-menu {
     position: sticky;
     left: 100%;
-    margin-top: 24px;
+    -top: 24px;
   }
   .footer-logo {
     position: sticky;
