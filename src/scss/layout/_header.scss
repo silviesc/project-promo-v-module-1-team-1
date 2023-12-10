@@ -14,9 +14,9 @@
 }
 
 .h1 {
-  color: var(--white);
-  font-size: 15px;
-  font-family: rubik;
+  color: $white;
+  font-size: $font-size-header;
+  font-family: $font-title;
   text-transform: uppercase;
   padding: 10px;
   align-self: center;
@@ -36,9 +36,9 @@
 }
 
 .menu-items a {
-  color: var(--white);
-  font-size: 15px;
-  font-family: rubik;
+  color: $white;
+  font-size: $font-size-header;
+  font-family: $font-title;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
