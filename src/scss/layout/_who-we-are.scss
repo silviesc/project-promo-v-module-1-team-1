@@ -1,3 +1,6 @@
+.who-we-are{
+  padding-bottom: 45px;
+}
 .h2_section {
   text-transform: uppercase;
   text-align: center;
@@ -5,7 +8,7 @@
   color: $dark-green;
   font-family: $font-title;
 }
-article {
+.article {
   margin: 0 auto;
 }
 .img {
@@ -18,22 +21,28 @@ article {
 }
 .cards {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     >p {
     text-align: center;
     padding: 5px;
     font-family: $font-text;
     font-size: 16px;
-  }
+    &.name{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    }
 }
 .social-container {
   color: $dark-green;
-  align-items: center;//demanar com aliniar correctament//
-  >a {
+  >a{
     gap: 10px;
     color: $dark-green;
     text-decoration: none;
     cursor: pointer;
-    &::after{
+    &.point::after{
         content: ".";
         color:$dark-green ;
     }
@@ -43,11 +52,13 @@ article {
   .who-we-are {
     max-width: 90vw;
     margin: auto;
+    padding-bottom:63px;
   }
-  article {
+  .article {
     display: flex;
     align-items: center;
     .cards {
+      align-items: flex-start;
       > p {
         text-align: left;
         font-size: small;
@@ -56,9 +67,11 @@ article {
     &:nth-child(odd) {
       flex-direction: row-reverse;
       .cards {
+        align-items: flex-end;
         > p {
           text-align: right;
         }
+
       }
     }
   }
@@ -67,7 +80,7 @@ article {
     margin: auto;
     > img {
       width: 100%;
-      border: 4px solid var(--lightgray);
+      border: 4px solid $light-gray;
     }
   }
   .cards {
@@ -78,7 +91,10 @@ article {
   }
 }
 @media (min-width: 1200px) {
-  article {
+  .who-we-are{
+    padding-bottom:60px ;
+  }
+  .article {
     max-width: 70vw;
   }
 }
