@@ -5,7 +5,7 @@
 }
 
 .claim {
-    background-color: var(--white);
+    background-color: $white;
     width: 290px;
     height: 80px;
     display: flex;
@@ -30,7 +30,7 @@
     }
 
     .claim {
-        background-color: var(--white);
+        background-color: $white;
         opacity: 80%;
         width: 441px;
         height: 80px;
