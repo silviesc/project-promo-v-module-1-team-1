@@ -28,10 +28,11 @@
     text-align: center;
     padding: 5px;
     font-family: $font-text;
-    font-size: 16px;
+    font-size: $font-size-trend;
     &.name{
-      font-size: 20px;
+      
       font-weight: bold;
+      font-size: 20px;
     }
     }
 }
@@ -61,7 +62,6 @@
       align-items: flex-start;
       > p {
         text-align: left;
-        font-size: small;
       }
     }
     &:nth-child(odd) {

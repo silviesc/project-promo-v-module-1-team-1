@@ -18,6 +18,7 @@
   text-align: center;
   color: $dark-gray;
   padding: 15px 15px 30px 15px;
+  font-size: $font-size-trend;
 }
 .square {
   background-color: $white;
@@ -46,7 +47,7 @@
 }
 
 .column-text {
-  font-size: 16px;
+  font-size: $font-size-trend;
   line-height: 1.5;
   text-align: center;
   color: $dark-gray;
@@ -87,14 +88,8 @@
     align-items: center;
   }
 
-  .team-title {
-    font-size: 30px;
-    ;
-  }
-
   .team-description {
-    width: 681px;
-    font-size: 20px;
+    width: 601px;
   }
   .box-2 {
     gap: 90px;
@@ -104,13 +99,6 @@
   .column {
     width: 439px;
   }
-  .column-title {
-    font-size: 28px;
-
-  }
-  .column-text {
-    font-size: 20px;
-
-  }
+  
 
 }
