@@ -34,25 +34,42 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding-left: 45px;
-    padding-right: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
     height: 170px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 50px;
+    column-gap: 300px;
   }
   .copyright {
-    position: sticky;
-    right: 100%;
-    top: 30px;
+    // position: sticky;
+    // right: 100%;
+    // top: 30px;
+    // height: auto;
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
   }
   .footer-menu {
-    position: sticky;
-    left: 100%;
-    top: 24px;
+    // position: sticky;
+    // left: 100%;
+    // top: 24px;
+    // height: auto;
+    // width: fit-content;
+    // left: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: 24px;
   }
   .footer-logo {
-    position: sticky;
-    right: 100%;
-    margin-top: 65px;
+    // position: sticky;
+    // right: 100%;
+    // margin-top: 65px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    // align-self: left;
+    // height: fit-content;
   }
 }
 @media screen and (min-width: 1200px) {
