@@ -1,69 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto 1 equipo 1</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="./assets/main-7db0fcf5.css">
+</head>
 
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
-
-    </li>
-  </ul>
-</main>
-
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-  </small>
-</footer>
-
+<body>
+  <div class="background-header">
+    <header class="header">
+        <div class="h1">
+             <h1 id="Nakama"><a  href="../index.html#Nakama">Nakama</a></h1>
+        </div>
+        <nav class="menu">
+            <ul class="menu-items">
+                <li><a href="../index.html#team">Equipo</a></li>
+                <li><a href="../index.html#who-we-are">Quienes somos</a></li>
+                <li><a href="../contact.html" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+  <main>
+    <div class="div-claim">
+    <section class="claim">
+        <h2 class="claim-h2">«Si quieres ir rápido, ve sola. Si quieres llegar lejos, ve acompañada.»</h2>
+    </section>
+</div>
+    <section class="team" id="team">
+  <article class="box-1">
+    <h3 class="team-title">Equipo</h3>
+    <p class="team-description">
+      "Somos un equipo dinámico y apasionado formado por cinco mujeres con un objetivo: crear una página de presentación
+      que destaque y demuestre los conocimientos adquiridos hasta ahora en maquetación. Gracias a la diversidad de
+      habilidades y la trayectoria de cada una, hemos conseguido abordar este desafío con creatividad y con una fuerte
+      ética colaborativa. En nuestro equipo, la sinergia es clave, y cada una de nosotras aporta su energía y dedicación
+      para lograr llegar a cumplir los objetivos marcados"
+    </p>
+  </article>
+  <div class="square"></div>
+  <article class="box-2">
+    <div class="column">
+      <h4 class="column-title">Fortalezas</h4>
+      <p class="column-text">
+        Tenemos backgrounds muy diferentes, lo que nos aporta una visión multidisciplinar.
+        Nuestro optimismo nos permite convertir los obstáculos en retos y oportunidades de aprendizaje.
+        Creemos en una dinámica de equipo colaborativa, tolerante y flexible.
+      </p>
     </div>
-    <script src="./js/main.js"></script>
-  </body>
+
+    <div class="column">
+      <h4 class="column-title goals">Objetivos</h4>
+      <p class="column-text">
+        Queremos crear productos digitales accesibles y sólidos. Colaborar en comunidades tech bajo los valores Agile. Nuestro objetivo final es hacernos un hueco en el sector digital asumiendo el reto de la formación continua que requiere este mundo.
+      </p>
+    </div>
+  </article>
+</section>
+    <section class="who-we-are" id="who-we-are">
+    <h2 class="h2_section">quiénes somos</h2>
+    <article class="article">
+           <figure class="img">
+        <img src="./images/tam.jpg" alt="tamaraWeibel">
+    </figure>
+    <div class="cards">
+        <p class="name">
+            Tamara Weibel Weibel  
+        </p>
+        <p>
+           Técnico de sonido y Licenciada en Comunicación audiovisual, tras muchos años dedicados a la ficción televisiva y los directos deportivos he dado el salto a un sector que parece estar en constante movimiento. Me encanta aprender y averiguar como funcionan las cosas y si es en equipo mucho mejor. Las grandes constantes de mi vida son los gatos y mi odio a los madrugones.
+        </p>
+        <span class="social-container">
+            <a class="point" href="https://twitter.com/TamWeibel" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a class="point" href="https://www.linkedin.com/in/tamara-weibel/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="point" href="https://github.com/Tam-Weibel" target="_blank">
+                <i class="fa-brands fa-github" class="icon"></i>
+            <a href="mailto:tamaraweibel@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </span>
+    </div>
+
+    </article>
+    <article class="article">
+           <figure class="img">
+        <img src="./images/silvia.jpg" alt="silviaEscanciano">
+    </figure>
+    <div class="cards">
+        <p class="name">
+            Silvia Escanciano Martínez 
+        </p>
+        <p>
+           Graduada en Psicología por la Universidad Autónoma de Madrid,
+       estoy descubriendo el mundo de la tecnología. Me gustaría
+       enfocar mi carrera profesional en este sentido y convertirme en desarrolladora frontend.
+       Me considero una persona inquieta a nivel intelectual, positiva, orientada a
+       objetivos y con predisposición al trabajo colaborativo.
+        </p>
+        <span class="social-container">
+            <a class="point" href="https://twitter.com/silviescanciano" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a class="point" href="https://www.linkedin.com/in/silvia-escanciano-5987b2105/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="point" href="https://github.com/silviesc" target="_blank">
+                <i class="fa-brands fa-github" class="icon"></i>
+            <a href="mailto:silvia.escanciano@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </span>
+    </div>
+
+    </article>
+    <article class="article">
+           <figure class="img">
+        <img src="./images/laura.jpg" alt="Laura">
+    </figure>
+    <div class="cards">
+        <p class="name">
+            Laura Sabrina Mellado Sánchez 
+        </p>
+        <p>
+           ¡Hola! Soy Laura Sabrina, Técnica Superior en Información y Comercialización Turísticas,
+       antigua jefa de sala de restaurante e n k l i m a (1 Sol Repsol, Guía Michelin) y ahora estudiante de programación web. Meta: ser full-stack developer.  Empática, paciente, perseverante, resolutiva y con una sonrisa siempre por bandera. Deseando aprender y colaborar con esta comunidad tech.
+        </p>
+        <span class="social-container">
+            <a class="point" href="https://twitter.com/i/flow/login?redirect_after_login=%2FLadymortadela1" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a class="point" href="https://www.linkedin.com/in/laura-sabrina-5bb3392a2/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="point" href="https://github.com/LauraSabrin" target="_blank">
+                <i class="fa-brands fa-github" class="icon"></i>
+            <a href="mailto:waila_05@hotmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </span>
+    </div>
+
+    </article>
+    <article class="article">
+           <figure class="img">
+        <img src="./images/avispa.jpg" alt="angela">
+    </figure>
+    <div class="cards">
+        <p class="name">
+            Angela Ávila Lasanta 
+        </p>
+        <p>
+           He dado un emocionante giro en mi carrera profesional proveniente del sector educativo, embarcándome en un nuevo desafío en el mundo del desarrollo web. Mi experiencia en la enseñanza me ha proporcionado habilidades sólidas en la comunicación y la resolución de problemas, cualidades que ahora aplico en el ámbito del desarrollo web. Estoy entusiasmada por aprender y contribuir al campo de la tecnología, explorando nuevas posibilidades y creando soluciones innovadoras. ¡Conéctate conmigo para intercambiar ideas y experiencias!
+        </p>
+        <span class="social-container">
+            <a class="point" href="https://twitter.com/lasantavispa" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a class="point" href="https://www.linkedin.com/in/%C3%A1ngela-%C3%A1vila-lasanta-501217152/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="point" href="https://github.com/Avispas" target="_blank">
+                <i class="fa-brands fa-github" class="icon"></i>
+            <a href="mailto:lasantavispa@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </span>
+    </div>
+
+    </article>
+    <article class="article">
+           <figure class="img">
+        <img src="./images/michelle.jpg" alt="Naidaly">
+    </figure>
+    <div class="cards">
+        <p class="name">
+            Naidaly Ruiz Perez 
+        </p>
+        <p>
+           Amante del aprendizaje con bagaje en el sector social, específicamente en la resolución de conflictos y mediación con colectivos de alta vulnerabilidad.
+       Por lo aprendido de mi background profesionales destaco mis habilidades de proactividad, trabajo en equipo, fácil adaptación a los cambios y comunicación asertiva.
+       El constante crecimiento del sector tecnológico y las diversas áreas en las que se encuentra me motiva por convertirme en programadora y poder aportar así mi granito de arena.
+        Deseo poder trabajar en entornos de buenas vibraciones con los cuales me sienta retada intelectualmente y así poder aportar el máximo.
+       ¡Be water my friend!
+        </p>
+        <span class="social-container">
+            <a class="point" href="" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a class="point" href="https://www.linkedin.com/in/naidalyruiz/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="point" href="https://github.com/Naidev7" target="_blank">
+                <i class="fa-brands fa-github" class="icon"></i>
+            <a href="mailto:" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </span>
+    </div>
+
+    </article>
+
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="copyright">
+    <p>Nakama © 2023</p>
+  </div>
+  <nav class="footer-menu">
+    <ul class="footer-list">
+      <li><a href="../index.html#team">Equipo</a></li>
+      <li><a href="../index.html#who-we-are">Quienes somos</a></li>
+      <li><a href="../contact.html" target="_blank">Contacto</a></li>
+    </ul>
+  </nav>
+  <figure class="footer-logo">
+    <img src="./images/logo-adalab.png" alt="Adalab logo" />
+  </figure>
+</footer>
+</body>
+
 </html>
