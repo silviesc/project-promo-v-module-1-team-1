@@ -3,21 +3,26 @@
 <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione cupiditate at magni blanditiis architecto! Nobis iste suscipit velit obcaecati ab mollitia amet alias. Iure consequuntur dolore saepe accusamus praesentium.</p>
 <p class="info__required">Todos los campos marcados con <span class="info__required--icon">*</span> son obligatorios.</p>
 </div>
-<form action="#" method="POST" class="form">
-    <label for="name" >Nombre completo </label>
-    <input type="text" id="name" placeholder="Nombre..." required>
-   
-    <label for="email">Email </label>
-       
+<form action="https://formspree.io/f/mqkvrjkq" method="POST" class="form">
+    <div>
+        <label for="name" >Nombre completo <span class="info__required--icon">*</span></label> 
+        <input type="text" id="name" placeholder="Nombre..." required>
+    </div>
+
+   <div>
+    <label for="email">Email <span class="info__required--icon">*</span></label>
     <input type="email" id="email" placeholder="nombre.apellidos@mail.com" required>
-   
-    <label for="number">Teléfono </label>
-      
+   </div>
+
+   <div>
+    <label for="number">Teléfono</label>
     <input type="tel" id="number" placeholder="Ej:123456789" >
-   
-    <label for="message">Mensaje</label>
-       
+   </div>
+
+   <div>
+    <label for="message">Mensaje <span class="info__required--icon">*</span></label>
     <textarea name="message" id="message" cols="30" rows="10" placeholder="¿Qué necesitas?"></textarea>
+   </div>
     
-    <input class="button" type="submit" value="Enviar">    
+    <input class="form__button" type="submit" value="Enviar">    
 </form>
