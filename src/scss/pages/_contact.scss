@@ -1,6 +1,7 @@
 .info {
   text-align: center;
   padding: 30px 15px 58px 15px;
+
   &__title {
     font-family: $font-title;
     color: $dark-green;
@@ -8,21 +9,25 @@
     font-size: 24px;
     font-weight: normal;
   }
+
   &__text {
     font-family: $font-text;
     font-size: 16px;
     color: $dark-gray;
     padding: 15px;
   }
+
   &__required {
     font-family: $font-text;
     font-size: 12px;
     color: $dark-gray;
+
     &--icon {
       color: $light-green;
     }
   }
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -32,40 +37,53 @@
   padding: 15px;
   gap: 7px;
   align-items: center;
-  margin-bottom: 60px;
-  & input {
+  width: fit-content;
+  margin: 0 auto 60px auto;
+
+
+  &__input {
     height: 45px;
     width: 290px;
     margin-bottom: 6px;
     padding-left: 15px;
+
     @media (min-width: 768px) {
       width: 442px;
+
     }
   }
+
   &__button {
     margin-top: 30px;
-      border-radius: 4px;
-      border: none;
-      color: white;
-      text-transform: uppercase;
-      background-color: $dark-green;
-      @media (min-width: 768px) {
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: $dark-green;
+    height: 45px;
+    width: 290px;
+    margin-bottom: 6px;
+    padding-left: 15px;
+
+    @media (min-width: 768px) {
         width: 206px;
-        height: 100px;
-        align-items: flex-end;
-      }
+        align-self: flex-end;
+    }
+
   }
-  
+
   & textarea {
     height: 105px;
     width: 290px;
     font-family: $font-text;
     padding-top: 11px;
     padding-left: 15px;
+
     @media (min-width: 768px) {
       width: 442px;
     }
   }
+
   & label {
     display: flex;
     align-self: flex-start;
