@@ -14,7 +14,7 @@
   integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <link rel="stylesheet" href="./assets/main-7db0fcf5.css">
+  <link rel="stylesheet" href="./assets/main-10b8ffaa.css">
 </head>
 <body>
     <div class="background-header">
@@ -24,8 +24,8 @@
         </div>
         <nav class="menu">
             <ul class="menu-items">
-                <li><a href="../index.html#team">Equipo</a></li>
-                <li><a href="../index.html#who-we-are">Quienes somos</a></li>
+                <li><a href="./#team">Equipo</a></li>
+                <li><a href="./#who-we-are">Quienes somos</a></li>
                 <li><a href="../contact.html" target="_blank">Contacto</a></li>
             </ul>
         </nav>
@@ -33,29 +33,38 @@
 </div>
     <main>
         <div class="info">
-<h1 class="info__title">Contacto</h1>
-<p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione cupiditate at magni blanditiis architecto! Nobis iste suscipit velit obcaecati ab mollitia amet alias. Iure consequuntur dolore saepe accusamus praesentium.</p>
-<p class="info__required">Todos los campos marcados con <span class="info__required--icon">*</span> son obligatorios.</p>
+    <h1 class="info__title">Contacto</h1>
+    <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione cupiditate at magni
+        blanditiis architecto! Nobis iste suscipit velit obcaecati ab mollitia amet alias. Iure consequuntur dolore
+        saepe accusamus praesentium.</p>
+    <p class="info__required">Todos los campos marcados con <span class="info__required--icon">*</span> son
+        obligatorios.</p>
 </div>
-<form action="#" method="POST" class="form">
-    <label for="name" >Nombre completo </label>
-    <input type="text" id="name" placeholder="Nombre..." required>
-   
-    <label for="email">Email </label>
-       
-    <input type="email" id="email" placeholder="nombre.apellidos@mail.com" required>
-   
-    <label for="number">Teléfono </label>
-      
-    <input type="tel" id="number" placeholder="Ej:123456789" >
-   
-    <label for="message">Mensaje</label>
-       
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="¿Qué necesitas?"></textarea>
-    
-    <input class="button" type="submit" value="Enviar">    
-</form>
+<form action="https://formspree.io/f/mqkvrjkq" method="POST" class="form">
+    <div>
+        <label for="name">Nombre completo <span class="info__required--icon">*</span></label>
+        <input class="form__input" type="text" id="name" placeholder="Nombre..." required>
+    </div>
 
+    <div>
+        <label for="email">Email <span class="info__required--icon">*</span></label>
+        <input class="form__input" type="email" id="email" placeholder="nombre.apellidos@mail.com" required>
+    </div>
+
+    <div>
+        <label for="number">Teléfono</label>
+        <input class="form__input" type="tel" id="number" placeholder="Ej:123456789">
+    </div>
+
+    <div>
+        <label for="message">Mensaje <span class="info__required--icon">*</span></label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="¿Qué necesitas?"></textarea> 
+        
+    </div>
+    <input class="form__button" type="submit" value="Enviar">
+
+    
+</form>
     </main>
     <footer class="footer">
   <div class="copyright">
