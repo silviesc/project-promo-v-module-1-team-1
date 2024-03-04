@@ -4,6 +4,8 @@ The project consists of creating a website that serves as an introduction to our
 In terms of technologies, it has allowed us to consolidate what we have been learning in recent weeks about layout: HTML, CSS, Flexbox, Media Queries, Github, Sass, Grid, etc. We have also used the Adalab Web Starter Kit as a tool to organize our project.
 Additionally, it has been an opportunity to start working as a team, getting to know each other, and applying the Agile philosophy, as constant communication has been key to moving the project forward.
 
+<img width="1065" alt="Captura de pantalla 2024-02-25 204405" src="https://github.com/silviesc/project-promo-v-module-1-team-1/assets/150022253/510d8435-2fe0-4ff6-b6ff-0af4fa235a99">
+
 ## Structure
 The website consists of two pages: a homepage and a contact page. The browser initially displays the homepage, and to visit the contact page, you need to click on the top right of the website where the link is located. For more details:
 
